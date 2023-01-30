@@ -1,0 +1,181 @@
+:root {
+    --primary-bg-color: #252f3b;
+    --secondary-bg-color: #1B2533;
+    --text-color: #ededed;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary-bg-color);
+    color: var(--text-color)
+}
+
+h1 {
+    text-align: center;
+}
+
+.container {
+    width: 500px;
+    height: 200px;
+    position: absolute;
+    left: 37%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.scoreBoard {
+    position: relative;
+    left: 39.5%;
+    width: 400px;
+    height: 50px;
+    border: 2px solid var(--secondary-bg-color);
+    box-shadow: 5px 5px 5px black;
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 10px;
+    margin-bottom: 2%;
+    display: flex;
+    justify-content: center
+}
+
+/* Computer position on scoreBoard */
+.c {
+    position: absolute;
+    left: 5%;
+}
+
+/* Actual score points */
+.score {
+    display: flex;
+    position: absolute;
+    left: 50%;
+}
+
+/* User position on scoreBoard*/
+.y {
+    position: absolute;
+    left: 80%;
+}
+
+.user-select {
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    left: 37%;
+}
+
+.finishBtn {
+    position: absolute;
+    left: 45.8%;
+    top: 50%;
+}
+
+.computer-select {
+    text-align: center;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+}
+
+button, .btn {
+    border: none;
+    background-color: var(--secondary-bg-color);
+    box-shadow: 5px 5px 5px black;
+    color: var(--text-color);
+    width: 165px;
+    height: 50px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+button:hover, .btn:hover {
+    background-color: #000;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 1);
+}
+
+.userName {
+    display: inline-block;
+    position: absolute;
+    left: 46%;
+    top: 20%;
+    border: 1px solid #000;
+    padding: 20px;
+    background-color: var(--text-color);
+    z-index: 1;
+    width: 200px;
+    height: 300px;
+}
+
+label, input {
+    color: #000;
+    display: block;
+}
+
+.labUsername {
+    padding-bottom: 20px;
+    padding-top: 90px;
+    text-align: center;
+}
+
+.msg {
+    padding-left: 30px;
+    padding-bottom: 20px;
+}
+
+.inUsername {
+    margin-bottom: 20px;
+    margin-left: 30px;
+}
+
+.btn {
+    margin-left: 20px;
+}
+
+.modal {
+    display: block;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.topScore {
+    position: absolute;
+    left: 18%;
+    top: 15%;
+    height: 280px;
+    padding: 0 20px;
+    border: 5px dashed var(--secondary-bg-color);
+    box-shadow: 5px 5px 5px black;
+}
+
+ul {
+    list-style-type: decimal;
+    color: var(--text-color);
+}
+
+li {
+    padding: 5px 0;
+    font-size: 25px;
+}

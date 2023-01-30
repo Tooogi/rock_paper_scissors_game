@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Rock, paper, scissors</title>
+</head>
+<body>
+    <h1>Rock, Paper, Scissors - The Game</h1>
+
+    <div id="unameModal" class="modal" data-backdrop="static" data-keyboard="false">
+        <form id="userNameModal" class="userName">
+            <span class="close">&times;</span>
+            <label for="username" class="labUsername">What's your name?</label>
+            <div id="msg" class="msg"></div>
+            <input type="text" id="uname" class="inUsername" />
+            <button id="submitBtn" class="btn" onclick="saveScore()">Play</button>
+        </form>
+    </div>
+
+    <div class="scoreBoard">
+        <div class="c">Computer</div>
+        <div class="score">
+            <div class="computerScore">0</div>
+            <span> - </span>
+            <div class="yourScore">0</div>
+        </div>
+        <div class="y">You</div>
+    </div>
+
+    <div class="container" id="container">
+        <div class="computer"><h1>Computer:</h1> <div id="computer"></div></div>
+        <div class="user"><h1>User:</h1> <div id="user"></div></div>
+        <div class="winner"><h1>Winner:</h1> <div id="winner"></div></div>
+    </div>
+
+    <div class="user-select">
+        <button class="rock" value="Rock">Rock</button>
+        <button class="paper" value="Paper">Paper</button>
+        <button class="scissors" value="Scissors">Scissors</button>
+    </div>
+
+    <button id="finishBtn" class="finishBtn">Finish</button>
+
+    <div class="computer-select" id="computer-select"></div>
+
+    <div class="topScore">
+        <h1>Top 5 Leaderboard</h1>
+        <ul id="leaderboard"></ul>
+    </div>
+
+    <script src="js/app.js"></script>
+    <script src="js/modal.js"></script>
+   
+</body>
+</html>
